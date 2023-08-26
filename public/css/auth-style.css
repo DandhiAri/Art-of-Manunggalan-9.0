@@ -1,0 +1,24 @@
+/* body{
+    display: grid;
+    place-items: center;
+} */
+.form{
+    margin: 0 auto;
+    /* background-color: #3d144c; */
+    padding: 30px;
+    border-radius: 10px;
+    border: 5px solid grey;
+}
+.side-logo{
+    justify-self: left;
+}
+.logo-auth{
+    height: 30px;
+    margin: 2px;
+}
+.banner-regis{
+    display: grid;
+    place-items: center;
+    /* margin: auto; */
+    height: 100%;
+}

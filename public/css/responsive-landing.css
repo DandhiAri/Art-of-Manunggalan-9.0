@@ -1,0 +1,152 @@
+@media screen and (max-width: 1024px) {
+    .banner-hero {
+        height: 30em;
+    }
+    .countdown {
+        font-size: 3em;
+    }
+    .guest-content {
+        margin-left: 3.5rem;
+    }
+    .guest-name {
+        font-size: 3rem;
+    }
+    .sponsorlist{
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .sponsor-title {
+        margin-top: 5px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .banner-hero {
+        height: 25em;
+    }
+    .countdown {
+        font-size: 2em;
+    }
+    .btn-register{
+        font-size: 15px;
+    }
+    .nav-menu {
+        display: none;
+    }
+    #content {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .content-section:first-child {
+        margin-bottom: 15px;
+    }
+
+}
+@media screen and (max-width: 768px) {
+    .guest-content {
+        margin: 3em 0 0 3rem;
+    }
+    .sponsorlist{
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .guest-name {
+        font-size: 25px;
+    }
+    .guest-content {
+        margin-left: 4rem;
+    }
+    .guest-name {
+        font-size: 3rem;
+    }
+}
+@media screen and (max-width: 610px) {
+    .nav-logo{
+        font-size: 1.5em;
+    }
+    .banner-hero {
+        height: 15em;
+    }
+    .login-button{
+        font-size: 11px;
+    }
+    .register{
+        margin: 0 0 15px 15px;
+    }
+    .countdown {
+        font-size: 1.2em;
+    }
+    .btn-register{
+        margin-right: 25px;
+        font-size: 11px;
+    }
+    #content {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .content-section:first-child {
+        margin-bottom: 15px;
+    }
+    .guest-content {
+        margin-top: 2em;
+        margin-left: 4rem;
+    }
+    .guest-img{
+        width: 150px;
+    }
+    .guest-name {
+        font-size: 2rem;
+    }
+    .guest-desc{
+        font-size: 12px;
+    }
+    .sub-title{
+        font-size: 20px;
+    }
+    .sponsorlist{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .sponsor-title{
+        font-size: 10px;
+    }
+    .alamat-content{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:480px) {
+    .nav-logo{
+        font-size: 1.2em;
+    }
+    nav{
+        margin: 20px;
+    }
+    .banner-hero{
+        margin: 20px;
+    }
+    #content {
+        display: grid;
+        grid-template-columns: 100%;
+        margin: 20px;
+    }
+    .content-section:first-child {
+        margin-bottom: 15px;
+    }
+    .guest-name {
+        font-size: 1.5rem;
+    }
+    .sponsor-title{
+        font-size: 10px;
+    }
+    .sub-title{
+        font-size: 15px;
+    }
+    .outside-title{
+        font-size: 13px;
+    }
+    .sosmeds{
+        font-size: 10px;
+    }
+    footer{
+        font-size: 9px;
+    }
+    .alamat-content:last-child{
+        margin-top: 5px;
+    }
+}

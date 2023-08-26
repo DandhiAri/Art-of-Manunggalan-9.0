@@ -1,0 +1,304 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    background-image: url("/img/bg-aom1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 25px;
+    margin: 50px;
+    place-items: center;
+    background-color: white;
+}
+.nav-logo {
+    font-size: 2em;
+    font-family: "Yeseva One", sans-serif;
+}
+.nav-sideicon{
+    display: none;
+}
+.nav-menulist {
+    text-transform: capitalize;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 25px;
+    place-items: center;
+}
+.nav-menulist a {
+    text-decoration: none;
+    color: black;
+}
+.hover-underline {
+    display: inline-block;
+    position: relative;
+}
+
+.hover-underline::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    min-height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom left;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.login-button {
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 5px 10px;
+}
+
+.hover-animate:hover,
+.hover-animate:focus {
+    transform: translate(-3px, -3px);
+    transition: 0.2s;
+    box-shadow: 3px 5px black;
+}
+.hover-animate {
+    transition: 0.2s;
+}
+.reverse-hover-animate:hover,
+.reverse-hover-animate:focus {
+    transform: translate(3px, 3px);
+    box-shadow: none;
+    transition: 0.1s;
+}
+.reverse-hover-animate {
+    transition: 0.1s;
+    box-shadow: 3px 5px black;
+}
+
+
+.banner-hero {
+    border: 1px solid black;
+    border-radius: 25px;
+    margin: 50px;
+    overflow: hidden;
+    position: relative;
+    max-height: 600px;
+    background-size: cover;
+    background-image: url("/img/aom-banner3.png");
+    /* background-color: bisque; */
+}
+
+.banner-hero img {
+    z-index: -1;
+    border-radius: 25px;
+    position: relative;
+}
+
+.register {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 0 25px 45px;
+    width: 100%;
+    place-items: center;
+}
+.countdown {
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 7px;
+    background-color: white;
+    display: flex;
+    font-size: 4rem;
+    z-index: 1;
+}
+.btn-register{
+    margin: 0 100px 0 0;
+    background-color: white;
+    border-radius: 25px;
+    border: 1px solid black;
+    padding: 10px;
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+}
+.slider {
+    width: 100%;
+    position: absolute;
+}
+
+#content {
+    display: grid;
+    grid-template-columns: 73% 25%;
+    margin: 50px;
+    gap: 20px;
+}
+.side-sticky {
+    position: sticky;
+    top: 0;
+}
+.sub-title {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 5px 0;
+    font-weight: 500;
+    font-size: 25px;
+    font-family: "Yeseva One", serif;
+}
+.sponsors {
+    border: 1px solid black;
+    border-radius: 25px;
+    background-color: #d1e9f5;
+    z-index: -2;
+}
+.sponsorlist {
+    margin: 10px;
+    display: grid;
+    grid-template-columns:repeat(6, minmax(2em, 1fr));
+    gap: 20px;
+    /* row-gap: 20px */
+}
+.sponsor {
+    display: grid;
+    place-items: center;
+    
+}
+.sponsor-image {
+    border: 1px solid black;
+    border-radius: 100%;
+    width: 5rem;
+    display: block;
+    /* z-index: -1; */
+    /* position: relative; */
+}
+.sponsor-title {
+    text-transform: capitalize;
+    text-align: center;
+    place-items: center;
+    margin-top: 7px;
+    border: 1px solid black;
+    border-radius: 25px;
+    background-color: white;
+    font-weight: 700;
+    font-size: 13px;
+    padding: 3px;
+}
+.gmap_iframe {
+    border-radius: 0 0 25px 25px;
+    width: 100%;
+    margin-bottom: -3px;
+}
+.side-content {
+    border: 1px solid black;
+    border-radius: 25px;
+    margin-bottom: 25px;
+    height: fit-content;
+    background-color: bisque;
+}
+.guest {
+    border: 1px solid black;
+    border-radius: 25px;
+    margin-bottom: 25px;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    background-color: rgb(245, 207, 234);
+}
+.guest-img {
+    border-radius: 100%;
+    width: 200px;
+    border: 1px solid black;
+    /* place-self: center; */
+    margin: 3px 0 3px 3px;
+}
+.guest-img .hover-animate:hover {
+    border: none;
+}
+.guest-content {
+    margin-top: 30px;
+    font-size: 17px;
+}
+.guest-desc {
+    margin-top: 30px;
+    font-size: 17px;
+}
+
+.guest-name {
+    font-family: "Yeseva One", serif;
+    font-size: 4rem;
+}
+.guest-name .hover-underline::after {
+    margin-top: -5px;
+    height: 3px !important;
+}
+.outside-title {
+    margin: -15px 0 0 5px;
+    padding: 0 5px;
+    border-radius: 25px;
+    background-color: white;
+    width: fit-content;
+    border: 1px solid black;
+}
+.alamat-content {
+    margin: 0 10px 0 20px;
+    text-align: justify;
+    display: flex !important;
+    row-gap: 5px;
+    font-size: 13px;
+}
+
+.alamat-content p {
+    margin-left: 5px;
+}
+.sosmeds {
+    display: flex;
+    justify-content: left;
+    padding-left: 20px;
+    gap: 10px;
+    place-items: center;
+    /* height: 15px; */
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    background-color: bisque;
+}
+.sosmeds:hover {
+    border: 1px solid black;
+}
+.sosmeds:first-child {
+    border-radius: 25px 25px 0 0;
+}
+.sosmeds:last-child {
+    border-radius: 0 0 25px 25px;
+}
+.sosmeds img {
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
+}
+.border {
+    border: 1px solid black;
+}
+footer {
+    text-align: center;
+    padding: 6px 0;
+    background-color: bisque;
+}
+

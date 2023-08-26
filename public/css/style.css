@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.bg-bannerhero{
+    background-size:90vwh; 
+    background-image:url(/img/retro-neon.gif); 
+    background-position:top center;
+    background-size:cover;
+    filter: brightness(0.3);
+}
+body{
+    /* color: #0ff; */
+    color: #faeb2c;
+    background-color: #3d144c;
+}
+.bg-yellow{
+    background-color: #faeb2c;
+}
+.font{
+    /* color: #0ff; */
+    color: #faeb2c;
+}
+.nav-link:hover{
+    color: #0ff;
+    /* color: #faeb2c; */
+}
+.nav-link:active{
+    color: #0ff;
+}
+.nav-link:disabled{
+    color: #0ff;
+}
+.countdown {
+    display: flex;
+    font-size: 4rem;
+}
+.navbar-brand{
+    color: #faeb2c;
+}
+a:hover{
+    color: #e900ff;
+}
+
+.divider {
+    margin: 0 0.5rem;
+}
+.btn{
+    background-color: #1685f8;
+    color: #faeb2c;
+    border: none;
+
+}
+.btn:hover{
+    background-color: #faeb2c;
+    color:  #1685f8;
+    border: none;
+}
+.register{
+    display:grid;
+    place-items: center;
+}
+.divider{
+    color: #0ff;
+}
+.bg-footer{
+    background-color: #3d144c;
+}
+#loading-page {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    display: flex;
+    transition: opacity 1s ease;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+.hidden {
+    display: none;
+}
+
+.finish {
+    opacity: 0;
+    pointer-events: none;
+}
+.mapouter{
+    position:relative;
+    text-align:right;
+    width:600px;
+    height:400px;
+}
+.gmap_canvas {
+    overflow:hidden;
+    background:none !important;
+    width:600px;
+    height:400px;
+}
+.gmap_iframe {
+    width:600px ;
+    height:400px ;
+}
+.sec-title{
+    text-align: center;
+    padding-bottom: 5rem;
+}
+.location-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.sponsor{
+    text-align: center;
+    
+}
+.address{
+    margin-left: 30px;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    /* justify-items: flex-end; */
+}
+.sosmed{
+    display: flex;
+    gap: 10px;
+    text-align: center;
+    font-size: 10px;
+}
+.img-footer{
+    width: 30px;
+    border-radius: 100%;
+}
+@media screen and (max-width:769px) {
+    .location-content{
+        display: grid;
+        grid-template-columns: 1fr;
+        /* gap: 20px; */
+        place-items: center;
+        text-align: center;
+    }
+    .address{
+        margin: 0;
+        width: 90%;
+    }
+}
