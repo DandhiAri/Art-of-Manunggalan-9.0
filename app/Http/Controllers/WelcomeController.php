@@ -15,4 +15,7 @@ class WelcomeController extends Controller
         $sponsorships=$sponsorshipService->getData();
         return view('landing',compact('sponsorships'));
     }
+    public function about() {
+        return view('about');
+    }
 }

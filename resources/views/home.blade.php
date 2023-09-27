@@ -3,7 +3,6 @@
 @section('content')
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-8">
                 <div class="card">
                     @if (Auth::User()->no_reference != null && Auth::User()->confirm == '2')
                         <div class="card-header">
@@ -158,7 +157,6 @@
                         </div>
                     @endif
                 </div>
-            </div>
         </div>
     </div>
 @endsection

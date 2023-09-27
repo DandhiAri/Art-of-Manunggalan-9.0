@@ -24,7 +24,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/test', [WelcomeController::class, 'index'])->name('welcome');
 Route::get('/',[WelcomeController::class, 'test'])->name('welcome');
-
+Route::get('/about',[WelcomeController::class, 'about'])->name('about');
+Route::get('logout',[HomeController::class, 'logout'])->name('logout');
 // admin here
 Route::prefix('admin')
     // ->middleware(['auth','is_admin','verified'])

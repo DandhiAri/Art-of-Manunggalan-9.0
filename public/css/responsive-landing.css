@@ -1,85 +1,56 @@
-@media screen and (max-width: 1024px) {
-    .banner-hero {
-        height: 30em;
+@media screen and (max-width: 1025px) {
+    .sponsorship{
+        grid-template-columns: 20% 30% 40%;
     }
-    .countdown {
-        font-size: 3em;
+    .hmjti-img{
+        width: 140px;
     }
-    .guest-content {
-        margin-left: 3.5rem;
-    }
-    .guest-name {
-        font-size: 3rem;
-    }
-    .sponsorlist{
-        grid-template-columns: repeat(5, 1fr);
-    }
-    .sponsor-title {
-        margin-top: 5px;
+    .identitas{
+        grid-template-columns: 1fr;
     }
 }
 @media screen and (max-width: 800px) {
-    .banner-hero {
-        height: 25em;
-    }
-    .countdown {
-        font-size: 2em;
-    }
-    .btn-register{
-        font-size: 15px;
-    }
+
     .nav-menu {
         display: none;
     }
-    #content {
+    .sponsorship{
         display: grid;
-        grid-template-columns: 100%;
+        grid-template-columns: 1fr;
     }
-    .content-section:first-child {
-        margin-bottom: 15px;
-    }
-
 }
 @media screen and (max-width: 768px) {
-    .guest-content {
-        margin: 3em 0 0 3rem;
-    }
-    .sponsorlist{
-        grid-template-columns: repeat(5, 1fr);
-    }
     .guest-name {
-        font-size: 25px;
-    }
-    .guest-content {
-        margin-left: 4rem;
-    }
-    .guest-name {
-        font-size: 3rem;
+        font-size: 1.3em;
     }
 }
 @media screen and (max-width: 610px) {
     .nav-logo{
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
+    
     .banner-hero {
         height: 15em;
     }
     .login-button{
-        font-size: 11px;
+        font-size: 14px;
     }
     .register{
-        margin: 0 0 15px 15px;
+        display: grid;
+        place-items: center;
+        position: relative;
+        width: 100%;
     }
     .countdown {
         font-size: 1.2em;
     }
     .btn-register{
-        margin-right: 25px;
+        margin: 10px 25px 7px 0;
         font-size: 11px;
+        font-size: 15px;
     }
-    #content {
-        display: grid;
-        grid-template-columns: 100%;
+    .banner-hero-title, .banner-hero-desc{
+        font-size: 15px;
     }
     .content-section:first-child {
         margin-bottom: 15px;
@@ -88,14 +59,14 @@
         margin-top: 2em;
         margin-left: 4rem;
     }
+    .guest-container-title{
+        font-size: 14px;
+    }
     .guest-img{
         width: 150px;
     }
     .guest-name {
-        font-size: 2rem;
-    }
-    .guest-desc{
-        font-size: 12px;
+        font-size: 1.2em;
     }
     .sub-title{
         font-size: 20px;
@@ -104,35 +75,72 @@
         grid-template-columns: repeat(4, 1fr);
     }
     .sponsor-title{
-        font-size: 10px;
+        font-size: 14px;
     }
     .alamat-content{
         font-size: 10px;
     }
 }
-@media screen and (max-width:480px) {
+@media screen and (max-width:481px) {
+    .countdown{
+        font-size: 0.9em;
+    }
     .nav-logo{
         font-size: 1.2em;
+    }
+    .register{
+        justify-content: center;
+        margin: 0;
     }
     nav{
         margin: 20px;
     }
-    .banner-hero{
-        margin: 20px;
+    .banner-hero-title h2{
+        margin-bottom: -12px;
     }
-    #content {
-        display: grid;
-        grid-template-columns: 100%;
-        margin: 20px;
+    .isi{
+        padding: 0 20px 0 20px ;
+    }
+    .banner-hero{
+        padding: 10px;
+    }
+    .banner-hero-title, .banner-hero-desc{
+        font-size: 12px;
+        text-align: center;
     }
     .content-section:first-child {
         margin-bottom: 15px;
     }
+    .guest-list{
+        gap: 10px;
+    }
+    .guest-img {
+        width: 120px;
+    }
     .guest-name {
-        font-size: 1.5rem;
+        font-size: 1em;
+        margin-top: -10px;
+    }
+    .event-title {
+        padding-top: 15%;
+        font-size: 17px;
+    }
+    .hmjti-img{
+        width: 90px;
+    }
+    .direct-event{
+        font-size: 10px;
+    }
+    .event-list{
+        gap : 12px;
+    }
+    .event{
+        width:7em;
+        height: 7em;
+        padding: 5px 5px;
     }
     .sponsor-title{
-        font-size: 10px;
+        font-size: 15px;
     }
     .sub-title{
         font-size: 15px;
@@ -148,5 +156,81 @@
     }
     .alamat-content:last-child{
         margin-top: 5px;
+    }
+}
+@media screen and (max-width: 415px){
+    nav{
+        padding: 15px;
+    }
+    .isi{
+        padding:  30px 20px 0 20px;
+    }
+    .nav-logo{
+        font-size: 1em;
+    }
+    .countdown{
+        font: 0.7em;
+    }
+    .banner-hero-title h2 {
+        margin-bottom: -12px;
+    }
+    .banner-hero-desc{
+        margin : 0 0 8px 0;
+    }
+    .btn-register{
+        margin-right: 0;
+    }
+    .register{
+        margin: 0;
+    }
+}
+@media screen and (max-width: 320px) {
+    .nav-logo{
+        font-size: 0.85em;
+    }
+    .login-button{
+        font-size: 12px;
+    }
+    .single-container{
+        padding: 10px 10px;
+    }
+    .banner-hero-title{
+        font-size: 13px;
+    }
+    .banner-hero-desc{
+        font-size: 9px;
+    }
+    .register{
+        margin-bottom: 10px;
+    }
+    .banner-hero{
+        max-height: 650px;
+        height: 16em;
+    }
+    .countdown{
+        gap: 5px;
+        font-size: 11px;
+    }
+    .btn-register{
+        font-size: 13px;
+        /* margin-bottom : 10px; */
+    }
+    .guest-img{
+        width: 5em;
+    }
+    .guest-name{
+        font-size: 12px;
+    }
+    .event{
+        width: 5em;
+        height: 5em;
+        padding: 5px 5px;
+    }
+    .event-title{
+        padding-top: 30%;
+        font-size: 13px;
+    }
+    .direct-event{
+        display: none;
     }
 }

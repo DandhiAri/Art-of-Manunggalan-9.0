@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Services\UserService;
+use Illuminate\Support\Facades\Auth;
 use App\Services\SettingService;
 
 class HomeController extends Controller
@@ -40,5 +41,15 @@ class HomeController extends Controller
             toast('Gagal!', 'error');
             return redirect()->back();
         }
+    }
+    public function logout(Request $request)
+    {
+        Auth::logout();
+    
+        $request->session()->invalidate();
+    
+        $request->session()->regenerateToken();
+    
+        return redirect('/');
     }
 }
